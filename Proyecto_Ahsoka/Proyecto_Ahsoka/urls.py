@@ -22,8 +22,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include('LogroApp.api.urls'))
-    
+    path('api/Logros',include('LogroApp.api.urls')),
+    path('api/Usuarios',include('UsuarioApp.api.urls')),
+    path('api/Comentarios',include('ComentarioApp.api.urls'))
 ]
 
 if settings.DEBUG:
