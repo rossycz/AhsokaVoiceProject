@@ -9,3 +9,6 @@ class comentario(models.Model):
 
     Achivement=models.ForeignKey(logro,null=True,blank=True,on_delete=models.CASCADE)
     User=models.ForeignKey(usuario,null=True,blank=True,on_delete=models.CASCADE)
+    
+    class Meta:
+        db_table = 'comments'

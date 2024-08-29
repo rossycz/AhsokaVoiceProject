@@ -24,7 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/Logros',include('LogroApp.api.urls')),
     path('api/Usuarios',include('UsuarioApp.api.urls')),
-    path('api/Comentarios',include('ComentarioApp.api.urls'))
+    path('api/Comentarios',include('ComentarioApp.api.urls')),
+    path('api/Likes',include('likesApp.api.urls')),
 ]
 
 if settings.DEBUG:
