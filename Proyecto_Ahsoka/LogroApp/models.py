@@ -36,3 +36,6 @@ class logro(models.Model):
     fecha = models.DateField()
     imglogro = models.ImageField(upload_to="logros", null=True)
     status = models.BooleanField(default=True)
+    
+    class Meta:
+        db_table = 'logro'

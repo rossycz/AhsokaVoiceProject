@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'LogroApp',
     'UsuarioApp',
     'ComentarioApp',
+    'likesApp',
 
 ]
 
@@ -83,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'AhsokaB',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'PASSWORD': '12J13A20V0',
         'HOST': 'localhost',
         'PORT': '5432',
 
