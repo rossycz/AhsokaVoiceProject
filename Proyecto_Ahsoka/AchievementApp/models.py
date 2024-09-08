@@ -1,5 +1,5 @@
 from django.db import models
-from UsuarioApp.models import usuario
+from UserApp.models import user
 #from django.db.models.functions import Random
 #from LogroApp.models import logro
 
@@ -7,7 +7,7 @@ from UsuarioApp.models import usuario
 
 
 # Create your models here.
-class logro(models.Model):
+class achievement(models.Model):
 
     # Definición de las categorías
     CATEGORIA_OPCIONES = [
@@ -24,7 +24,7 @@ class logro(models.Model):
         ('continuing_education', 'Educación Continua'),
     ]
     
-    User=models.ForeignKey(usuario,null=True,blank=True,on_delete=models.CASCADE)
+    User=models.ForeignKey(user,null=True,blank=True,on_delete=models.CASCADE)
     titulo = models.CharField(max_length=200)
     # Campo de selección de categoría
     categoria = models.CharField(

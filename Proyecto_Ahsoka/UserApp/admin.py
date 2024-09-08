@@ -1,5 +1,5 @@
 from django.contrib import admin
-from LogroApp.models import logro
+from UsuarioApp.models import user
 
 # Register your models here.
-admin.site.register(logro)
+admin.site.register(user)
