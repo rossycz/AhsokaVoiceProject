@@ -75,8 +75,17 @@ WSGI_APPLICATION = 'PI_Ahsoka.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< Updated upstream
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+=======
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'AhsokaBD',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
+        'PORT': '5432',
+>>>>>>> Stashed changes
     }
 }
 
