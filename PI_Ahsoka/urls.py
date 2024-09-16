@@ -18,13 +18,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from AchivementApp.views import show_random_achievement
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/achievement',include('AchivementApp.api.urls')),
     path('api/user',include('UserApp.api.urls')),
-    #path('api/comment',include('ComentarioApp.api.urls')),
-    #path('api/feed/', mostrar_logro_aleatorio, name='feed'),
+    path('api/comment',include('CommentApp.api.urls')),
+    path('api/like',include('LikeApp.api.urls')),
+    path('api/feed/',show_random_achievement, name='feed'),
 ]
 
 if settings.DEBUG:

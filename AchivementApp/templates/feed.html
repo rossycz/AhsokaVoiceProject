@@ -1,0 +1,16 @@
+<!-- feed.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logro Aleatorio</title>
+</head>
+<body>
+    <h1>Logro Aleatorio</h1>
+    {% if logro %}
+        <h2>{{ logro.titulo }}</h2>
+        <p>{{ logro.descripcion }}</p>
+    {% else %}
+        <p>No hay logros disponibles.</p>
+    {% endif %}
+</body>
+</html>

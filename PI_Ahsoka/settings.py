@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'AchivementApp',
     'UserApp',
+    'CommentApp',
+    'LikeApp',
 ]
 
 MIDDLEWARE = [
