@@ -5,10 +5,18 @@
     <title>Logro Aleatorio</title>
 </head>
 <body>
-    <h1>Logro Aleatorio</h1>
-    {% if logro %}
-        <h2>{{ logro.titulo }}</h2>
-        <p>{{ logro.descripcion }}</p>
+    <center>
+    <h1>Mis Logros</h1>
+    {% if achievement %}
+    
+        <h2>{{ achievement.title }}</h2>
+        <h3>{{ achievement.category }}</h3>
+        <!-- Mostrar la imagen del logro -->
+        {% if achievement.achievement_image %}
+            <img src="{{ achievement.achievement_image.url }}" alt="Imagen del logro" style="max-width: 40%; height: auto;">
+        {% endif %}
+        <p>{{ achievement.description }}</p>
+    </center>
     {% else %}
         <p>No hay logros disponibles.</p>
     {% endif %}

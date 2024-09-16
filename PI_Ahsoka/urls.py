@@ -27,6 +27,11 @@ urlpatterns = [
     path('api/comment',include('CommentApp.api.urls')),
     path('api/like',include('LikeApp.api.urls')),
     path('api/feed/',show_random_achievement, name='feed'),
+    #Rutas web   
+    path('achievement',include('AchivementApp.urls',namespace='achievement')),
+    path('user',include('UserApp.urls',namespace='user')),
+
+    
 ]
 
 if settings.DEBUG:
